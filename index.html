@@ -1,0 +1,108 @@
+
+
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" integrity="sha512-Y7mT98zNvJ1S2Bry5XABvGg/3BNczcz0h/QAJGH7wKmJYpMq6t7H+J4LwO3R9tYuhL8gmY2z0zFWeUN3E4UGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js" integrity="sha512-0VrTWwEmN+4lXk3RccsFswt+9aVxZeTX0CZLJvKdLxQnbEKzODVc54iMHwQo0Eg+XjzVr1o7rHgTp6z9kKQ8Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+   
+        <div class="container">
+            <div class="to">
+              
+                <ul class="item">
+                  <label>Visibilty Status</label>
+                  <div class="cn">
+                  <li><input type="radio" name="option">Published</li>
+                  <li><input type="radio" name="option">Scheduled</li>
+                  <li><input type="radio" name="option">Hidden</li>
+                  </div>
+                </ul>
+                
+                <ul class="item">
+                  <label>Publish Schedule</label>
+                       <div class='input-group date' id='datetimepicker3'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                          </span>
+                       </div>
+                      </ul>
+               
+                <ul class="item">
+                  
+                  <label>Cetaigoy</label>
+                  <label for="fruit-select">Clothes:</label>
+                  <select id="fruit-select" name="fruit">
+                    <option value="apple">Clothes</option>
+                    <option value="banana" selected>Toys</option>
+                    <option value="orange">Cosmetic</option>
+                    <option value="pear">Laptop</option>
+                    <option value="pear">Mobile</option>
+                    <option value="pear">Watch</option>
+                  </select>
+                </ul>
+                <ul class="item">
+                  <label>Categories Image Upload</label>
+                  <form>
+                    <button>
+                    <label for="image">Choose an image:</label>
+                    <input type="file" id="image" name="image">
+                  </button>
+                  <button>
+                    <input type="submit" value="Upload">
+                    </button>
+                  </form>
+
+                </ul>
+
+            </div>
+
+            <div class="cr">
+                <div class="yu">
+
+                  <!-- <img src="your-image-url-here" alt="Your image description here" /> -->
+
+                    <ul>
+                    <h1>basic Information</h1>
+                        <li>
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter your Name" name="name" id="name" required>
+                        </li>
+                        <li>
+                            <label for="title"><b>Title</b></label>
+                            <input type="text" placeholder="Enter your Title" name="title" id="title" required>
+                        </li>
+                    </ul>
+
+
+                    <img id="image" src="#" alt="Uploaded Image" class="cropped-image">
+                    <input type="hidden" id="croppedData" name="croppedData">
+                </div>
+            </div>
+        </div>
+
+        
+      
+
+
+
+
+
+
+           
+            
+       
+
+
+
+</head>
+</body>
